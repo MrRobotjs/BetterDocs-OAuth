@@ -55,7 +55,7 @@ function routeRequest(settings, req, res) {
     }
     else if (req.method === 'GET' && (pathname === '' || pathname === '/' || pathname === base_path || pathname === base_path + '/')) {
         res.writeHead(200);
-        res.write('alive');
+        res.write('BetterDocs Comments Bot is ALIVE!');
         res.end();
     }
     else if (req.method === 'GET' && pathname === base_path + '/authorize') {
